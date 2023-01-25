@@ -5,12 +5,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Weather Dashboard</title>
 </head>
 
 <body>
+    <header>
+        <h1 id="header">Weather Dashboard</h1>
+    </header>
+    <div class="main">
+        <div class="search">
+            <div class="search-bar">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="search-results">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush searched-citys">
+                        <!-- append search results to here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="current-weather">
+            <div class="card w-75 mb-3">
+                <div class="card-body">
+                    <div class="location-date">
+                        Charlotte (1/25/2023) ☀️
+                    </div>
+                    <div class="current-temp">
+                        Temperature: 90.0 F
+                    </div>
+                    <div class="current-humidity">
+                        Humidity: 41%
+                    </div>
+                    <div class="current-wind-speed">
+                        Wind Speed: 4.7mph
+                    </div>
+                    <div class="current-map">
+                        Weather Map Here:
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="weather-cards">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title wc-date">1/26/2023</h5>
+                            <div class="wc-symbol">☀️</div>
+                            <div class="wc-temperature">Temperature: 86.56F</div>
+                            <div class="wc-humidity">Humidity: 43%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title wc-date">1/27/2023</h5>
+                            <div class="wc-symbol">☀️</div>
+                            <div class="wc-temperature">Temperature: 86.56F</div>
+                            <div class="wc-humidity">Humidity: 43%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title wc-date">1/28/2023</h5>
+                            <div class="wc-symbol">🌤</div>
+                            <div class="wc-temperature">Temperature: 86.56F</div>
+                            <div class="wc-humidity">Humidity: 43%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title wc-date">1/29/2023</h5>
+                            <div class="wc-symbol">🌦</div>
+                            <div class="wc-temperature">Temperature: 86.56F</div>
+                            <div class="wc-humidity">Humidity: 43%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title wc-date">1/30/2023</h5>
+                            <div class="wc-symbol">☀️</div>
+                            <div class="wc-temperature">Temperature: 86.56F</div>
+                            <div class="wc-humidity">Humidity: 43%</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
